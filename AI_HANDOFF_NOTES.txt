@@ -1,0 +1,43 @@
+# AI Handoff Notes: Path Finder App Architecture & Considerations
+
+Welcome, next AI! This document contains all the structural considerations, architectural decisions, and specific gotchas I encountered while building this network pathfinding visualization tool. Please refer to this before making major changes to the codebase.
+
+## 1. Core Technology Stack
+- **Framework:** React + TypeScript + Vite
+- **Styling:** Vanilla CSS (`index.css` and `App.css`). The layout was explicitly modified to be full-width (`100vw` without max-width constraints) and uses a custom dark-mode glassmorphism aesthetic. No Tailwind.
+- **Graph Visualization:** `vis-network` and `vis-data`. (Note: We use this natively within React refs instead of a wrapper library to maintain complete control over performance and state).
+- **Icons:** `lucide-react`
+
+## 2. Pathfinding Engine (`src/engine/Pathfinding.ts`)
+- Implements Dijkstra's algorithm based on edge `cost`.
+- **CRITICAL NOTE ON DIRECTIONALITY:** The algorithm is STRICTLY directional. If the CSV provides `A -> B`, the algorithm cannot traverse `B -> A` unless a separate explicit `B -> A` edge exists. An earlier bug artificially added reverse edges for "undirected routing", which completely broke one-way RF links. Do not reintroduce bidirectional assumptions into the adjacency list.
+- **Canceled Edges:** A `Set<string>` of canceled edge IDs is passed in. The algorithm skips these during adjacency list building.
+
+## 3. Graph Rendering Architecture (`src/components/MapViewer.tsx`)
+This is the most complex part of the app. It relies on several key hacks and optimizations to `vis-network` to meet user requirements:
+
+- **Merged Edges (Bidirectional Visuals):** `vis-network` naturally draws parallel edges as curved (`smooth`) lines, which looks messy for 300+ edges. To fix this, I set `smooth: false` (forcing straight lines). If there is a reverse edge between two nodes, I DO NOT render a second edge. Instead, I merge them into a single visual edge object (using a composite key like `A-B`), store the original IDs in an `actualIds` array, and turn on the `from` arrow (making it visually bidirectional).
+- **Decoupled Physics & Layout State:** 
+  - The `Network` and its datasets (`visNodes`, `visEdges`) are initialized exactly ONCE when the CSV `data` is loaded.
+  - The Barnes-Hut physics engine uses high damping (`0.9`) and a high sleep threshold (`minVelocity: 2`). This forces the map to explode into a shape and instantly freeze. 
+  - Once the `stabilizationIterationsDone` event fires, **physics are explicitly disabled**.
+- **Dynamic Styling (No Re-Renders):** Calculating a route or cancelling an edge DOES NOT recreate the network. Recreating the network scrambles node positions. Instead, a secondary `useEffect` triggers, iterates over the existing `nodesDs` and `edgesDs`, and calls `.update()` with the new colors. This updates the visualization completely in-place.
+
+## 4. The Isolated Route Viewer (`src/components/IsolatedRouteViewer.tsx`)
+- This component renders ONLY the nodes and edges present in the calculated shortest path.
+- **Snaking Layout:** `vis-network`'s built-in physics and hierarchical engines resulted in crossed arrows for long paths. Instead, I wrote a custom mathematical layout algorithm inside this component that calculates strict X/Y coordinates for every node in a "snaking" pattern (5 nodes per row, drops down, reverses direction). 
+- Nodes are locked in place (`fixed: { x: true, y: true }`).
+
+## 5. Styling Rules & Edge Legend
+The user has very specific styling requests for edges that are dynamically applied during the `.update()` loop:
+- **Default (Fiber):** Indigo (`#6366f1`), solid line.
+- **High Cost (RF > 100):** Red (`#ef4444`), dashed line.
+- **Shortest Route (Normal):** Bright Green (`#10b981`), width 4, solid line.
+- **Shortest Route (High Cost / RF):** Bright Blue (`#3b82f6`), width 4, dashed line.
+- **Canceled by User:** Light Gray (`#d4d4d8`), dashed line. 
+
+## 6. Known Gotchas
+- **Event Loops & Hover States:** When mapping hover events from `MapViewer` to `IsolatedRouteViewer` and vice-versa, be careful. Using `vis-network` events (`hoverEdge`, `blurEdge`) to trigger React state updates can cause infinite render loops if the dependency arrays aren't perfect.
+- **Array References:** Always use constant array references (e.g., `const EMPTY_ARRAY = []`) for default props like `routeEdges = EMPTY_ARRAY`. Passing `[]` creates a new reference every render, which triggers the `useEffect` hooks and crashes the map.
+
+Good luck!

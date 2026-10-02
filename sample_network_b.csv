@@ -1,0 +1,390 @@
+Source,Destination,Medium,Region,Cost
+"NYC-HQ-GW1 (10.1.1.1)","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"IAD-Ashburn (10.1.1.2)","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,2
+"IAD-Ashburn (10.1.1.2)","JFK-PoP-01 (10.1.2.1)",Local,US-East,1
+"JFK-PoP-01 (10.1.2.1)","IAD-Ashburn (10.1.1.2)",Local,US-East,1
+"JFK-PoP-01 (10.1.2.1)","EWR-DC-01 (10.1.2.2)",Local,US-East,1
+"EWR-DC-01 (10.1.2.2)","JFK-PoP-01 (10.1.2.1)",Local,US-East,1
+"EWR-DC-01 (10.1.2.2)","BOS-Metro-R1 (10.1.2.3)",Local,US-East,2
+"BOS-Metro-R1 (10.1.2.3)","EWR-DC-01 (10.1.2.2)",Local,US-East,2
+"BOS-Metro-R1 (10.1.2.3)","PHL-Hub-01 (10.1.2.4)",Local,US-East,1
+"PHL-Hub-01 (10.1.2.4)","BOS-Metro-R1 (10.1.2.3)",Local,US-East,1
+"PHL-Hub-01 (10.1.2.4)","MAN-Tower-RF (10.1.3.1)",Local,US-East,1
+"MAN-Tower-RF (10.1.3.1)","PHL-Hub-01 (10.1.2.4)",Local,US-East,1
+"MAN-Tower-RF (10.1.3.1)","BKN-Dist-01 (10.1.3.2)",Local,US-East,2
+"BKN-Dist-01 (10.1.3.2)","MAN-Tower-RF (10.1.3.1)",Local,US-East,2
+"BKN-Dist-01 (10.1.3.2)","QNS-Switch-1 (10.1.3.3)",Local,US-East,1
+"QNS-Switch-1 (10.1.3.3)","BKN-Dist-01 (10.1.3.2)",Local,US-East,1
+"QNS-Switch-1 (10.1.3.3)","RIC-Relay-01 (10.1.3.4)",Local,US-East,1
+"RIC-Relay-01 (10.1.3.4)","QNS-Switch-1 (10.1.3.3)",Local,US-East,1
+"RIC-Relay-01 (10.1.3.4)","DCA-PoP-02 (10.1.4.1)",Local,US-East,2
+"DCA-PoP-02 (10.1.4.1)","RIC-Relay-01 (10.1.3.4)",Local,US-East,2
+"DCA-PoP-02 (10.1.4.1)","BLT-Node-01 (10.1.4.2)",Local,US-East,1
+"BLT-Node-01 (10.1.4.2)","DCA-PoP-02 (10.1.4.1)",Local,US-East,1
+"BLT-Node-01 (10.1.4.2)","PIT-Node-01 (10.1.4.3)",Local,US-East,1
+"PIT-Node-01 (10.1.4.3)","BLT-Node-01 (10.1.4.2)",Local,US-East,1
+"PIT-Node-01 (10.1.4.3)","10.1.90.14",Local,US-East,2
+"10.1.90.14","PIT-Node-01 (10.1.4.3)",Local,US-East,2
+"10.1.90.14","10.1.90.15",Local,US-East,1
+"10.1.90.15","10.1.90.14",Local,US-East,1
+"10.1.90.15","10.1.90.16",Local,US-East,1
+"10.1.90.16","10.1.90.15",Local,US-East,1
+"10.1.90.16","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","10.1.90.16",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","JFK-PoP-01 (10.1.2.1)",Local,US-East,1
+"JFK-PoP-01 (10.1.2.1)","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,1
+"IAD-Ashburn (10.1.1.2)","EWR-DC-01 (10.1.2.2)",Local,US-East,2
+"EWR-DC-01 (10.1.2.2)","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","BOS-Metro-R1 (10.1.2.3)",Local,US-East,1
+"BOS-Metro-R1 (10.1.2.3)","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,1
+"IAD-Ashburn (10.1.1.2)","PHL-Hub-01 (10.1.2.4)",Local,US-East,2
+"PHL-Hub-01 (10.1.2.4)","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","MAN-Tower-RF (10.1.3.1)",Local,US-East,1
+"MAN-Tower-RF (10.1.3.1)","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,1
+"IAD-Ashburn (10.1.1.2)","BKN-Dist-01 (10.1.3.2)",Local,US-East,2
+"BKN-Dist-01 (10.1.3.2)","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","QNS-Switch-1 (10.1.3.3)",Local,US-East,1
+"QNS-Switch-1 (10.1.3.3)","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,1
+"IAD-Ashburn (10.1.1.2)","RIC-Relay-01 (10.1.3.4)",Local,US-East,2
+"RIC-Relay-01 (10.1.3.4)","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","DCA-PoP-02 (10.1.4.1)",Local,US-East,1
+"DCA-PoP-02 (10.1.4.1)","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,1
+"IAD-Ashburn (10.1.1.2)","BLT-Node-01 (10.1.4.2)",Local,US-East,2
+"BLT-Node-01 (10.1.4.2)","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","PIT-Node-01 (10.1.4.3)",Local,US-East,1
+"PIT-Node-01 (10.1.4.3)","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,1
+"IAD-Ashburn (10.1.1.2)","10.1.90.14",Local,US-East,2
+"10.1.90.14","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"NYC-HQ-GW1 (10.1.1.1)","10.1.90.15",Local,US-East,1
+"10.1.90.15","NYC-HQ-GW1 (10.1.1.1)",Local,US-East,1
+"IAD-Ashburn (10.1.1.2)","10.1.90.16",Local,US-East,2
+"10.1.90.16","IAD-Ashburn (10.1.1.2)",Local,US-East,2
+"JFK-PoP-01 (10.1.2.1)","PHL-Hub-01 (10.1.2.4)",Local,US-East,1
+"PHL-Hub-01 (10.1.2.4)","JFK-PoP-01 (10.1.2.1)",Local,US-East,1
+"EWR-DC-01 (10.1.2.2)","BKN-Dist-01 (10.1.3.2)",Local,US-East,2
+"BKN-Dist-01 (10.1.3.2)","EWR-DC-01 (10.1.2.2)",Local,US-East,2
+"BOS-Metro-R1 (10.1.2.3)","RIC-Relay-01 (10.1.3.4)",Local,US-East,1
+"RIC-Relay-01 (10.1.3.4)","BOS-Metro-R1 (10.1.2.3)",Local,US-East,1
+"MAN-Tower-RF (10.1.3.1)","BLT-Node-01 (10.1.4.2)",Local,US-East,2
+"BLT-Node-01 (10.1.4.2)","MAN-Tower-RF (10.1.3.1)",Local,US-East,2
+"QNS-Switch-1 (10.1.3.3)","10.1.90.14",Local,US-East,1
+"10.1.90.14","QNS-Switch-1 (10.1.3.3)",Local,US-East,1
+"DCA-PoP-02 (10.1.4.1)","10.1.90.15",Local,US-East,2
+"SFO-Equinix1 (10.2.1.1)","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SEA-WestCore (10.2.1.2)","SFO-Equinix1 (10.2.1.1)",Local,US-West,2
+"SEA-WestCore (10.2.1.2)","SJC-CiscoPoP (10.2.2.1)",Local,US-West,1
+"SJC-CiscoPoP (10.2.2.1)","SEA-WestCore (10.2.1.2)",Local,US-West,1
+"SJC-CiscoPoP (10.2.2.1)","OAK-Tower-RF (10.2.2.2)",Local,US-West,1
+"OAK-Tower-RF (10.2.2.2)","SJC-CiscoPoP (10.2.2.1)",Local,US-West,1
+"OAK-Tower-RF (10.2.2.2)","LAX-PoP-01 (10.2.2.3)",Local,US-West,2
+"LAX-PoP-01 (10.2.2.3)","OAK-Tower-RF (10.2.2.2)",Local,US-West,2
+"LAX-PoP-01 (10.2.2.3)","PDX-Metro-R1 (10.2.2.4)",Local,US-West,1
+"PDX-Metro-R1 (10.2.2.4)","LAX-PoP-01 (10.2.2.3)",Local,US-West,1
+"PDX-Metro-R1 (10.2.2.4)","PAO-Campus-1 (10.2.3.1)",Local,US-West,1
+"PAO-Campus-1 (10.2.3.1)","PDX-Metro-R1 (10.2.2.4)",Local,US-West,1
+"PAO-Campus-1 (10.2.3.1)","MTV-Cloud-GW (10.2.3.2)",Local,US-West,2
+"MTV-Cloud-GW (10.2.3.2)","PAO-Campus-1 (10.2.3.1)",Local,US-West,2
+"MTV-Cloud-GW (10.2.3.2)","SMO-Dist-01 (10.2.3.3)",Local,US-West,1
+"SMO-Dist-01 (10.2.3.3)","MTV-Cloud-GW (10.2.3.2)",Local,US-West,1
+"SMO-Dist-01 (10.2.3.3)","BERK-Node-01 (10.2.3.4)",Local,US-West,1
+"BERK-Node-01 (10.2.3.4)","SMO-Dist-01 (10.2.3.3)",Local,US-West,1
+"BERK-Node-01 (10.2.3.4)","SCZ-Subsea-1 (10.2.4.1)",Local,US-West,2
+"SCZ-Subsea-1 (10.2.4.1)","BERK-Node-01 (10.2.3.4)",Local,US-West,2
+"SCZ-Subsea-1 (10.2.4.1)","TAC-Node-01 (10.2.4.2)",Local,US-West,1
+"TAC-Node-01 (10.2.4.2)","SCZ-Subsea-1 (10.2.4.1)",Local,US-West,1
+"TAC-Node-01 (10.2.4.2)","RNO-Relay-01 (10.2.4.3)",Local,US-West,1
+"RNO-Relay-01 (10.2.4.3)","TAC-Node-01 (10.2.4.2)",Local,US-West,1
+"RNO-Relay-01 (10.2.4.3)","10.2.90.14",Local,US-West,2
+"10.2.90.14","RNO-Relay-01 (10.2.4.3)",Local,US-West,2
+"10.2.90.14","10.2.90.15",Local,US-West,1
+"10.2.90.15","10.2.90.14",Local,US-West,1
+"10.2.90.15","10.2.90.16",Local,US-West,1
+"10.2.90.16","10.2.90.15",Local,US-West,1
+"10.2.90.16","SFO-Equinix1 (10.2.1.1)",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","10.2.90.16",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","SJC-CiscoPoP (10.2.2.1)",Local,US-West,1
+"SJC-CiscoPoP (10.2.2.1)","SFO-Equinix1 (10.2.1.1)",Local,US-West,1
+"SEA-WestCore (10.2.1.2)","OAK-Tower-RF (10.2.2.2)",Local,US-West,2
+"OAK-Tower-RF (10.2.2.2)","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","LAX-PoP-01 (10.2.2.3)",Local,US-West,1
+"LAX-PoP-01 (10.2.2.3)","SFO-Equinix1 (10.2.1.1)",Local,US-West,1
+"SEA-WestCore (10.2.1.2)","PDX-Metro-R1 (10.2.2.4)",Local,US-West,2
+"PDX-Metro-R1 (10.2.2.4)","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","PAO-Campus-1 (10.2.3.1)",Local,US-West,1
+"PAO-Campus-1 (10.2.3.1)","SFO-Equinix1 (10.2.1.1)",Local,US-West,1
+"SEA-WestCore (10.2.1.2)","MTV-Cloud-GW (10.2.3.2)",Local,US-West,2
+"MTV-Cloud-GW (10.2.3.2)","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","SMO-Dist-01 (10.2.3.3)",Local,US-West,1
+"SMO-Dist-01 (10.2.3.3)","SFO-Equinix1 (10.2.1.1)",Local,US-West,1
+"SEA-WestCore (10.2.1.2)","BERK-Node-01 (10.2.3.4)",Local,US-West,2
+"BERK-Node-01 (10.2.3.4)","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","SCZ-Subsea-1 (10.2.4.1)",Local,US-West,1
+"SCZ-Subsea-1 (10.2.4.1)","SFO-Equinix1 (10.2.1.1)",Local,US-West,1
+"SEA-WestCore (10.2.1.2)","TAC-Node-01 (10.2.4.2)",Local,US-West,2
+"TAC-Node-01 (10.2.4.2)","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","RNO-Relay-01 (10.2.4.3)",Local,US-West,1
+"RNO-Relay-01 (10.2.4.3)","SFO-Equinix1 (10.2.1.1)",Local,US-West,1
+"SEA-WestCore (10.2.1.2)","10.2.90.14",Local,US-West,2
+"10.2.90.14","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SFO-Equinix1 (10.2.1.1)","10.2.90.15",Local,US-West,1
+"10.2.90.15","SFO-Equinix1 (10.2.1.1)",Local,US-West,1
+"SEA-WestCore (10.2.1.2)","10.2.90.16",Local,US-West,2
+"10.2.90.16","SEA-WestCore (10.2.1.2)",Local,US-West,2
+"SJC-CiscoPoP (10.2.2.1)","PDX-Metro-R1 (10.2.2.4)",Local,US-West,1
+"PDX-Metro-R1 (10.2.2.4)","SJC-CiscoPoP (10.2.2.1)",Local,US-West,1
+"OAK-Tower-RF (10.2.2.2)","MTV-Cloud-GW (10.2.3.2)",Local,US-West,2
+"MTV-Cloud-GW (10.2.3.2)","OAK-Tower-RF (10.2.2.2)",Local,US-West,2
+"LAX-PoP-01 (10.2.2.3)","BERK-Node-01 (10.2.3.4)",Local,US-West,1
+"BERK-Node-01 (10.2.3.4)","LAX-PoP-01 (10.2.2.3)",Local,US-West,1
+"PAO-Campus-1 (10.2.3.1)","TAC-Node-01 (10.2.4.2)",Local,US-West,2
+"TAC-Node-01 (10.2.4.2)","PAO-Campus-1 (10.2.3.1)",Local,US-West,2
+"SMO-Dist-01 (10.2.3.3)","10.2.90.14",Local,US-West,1
+"10.2.90.14","SMO-Dist-01 (10.2.3.3)",Local,US-West,1
+"SCZ-Subsea-1 (10.2.4.1)","10.2.90.15",Local,US-West,2
+"LON-TH-Core1 (10.3.1.1)","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"PAR-Equinix1 (10.3.1.2)","LON-TH-Core1 (10.3.1.1)",Local,EU-West,2
+"PAR-Equinix1 (10.3.1.2)","LHR-Edge-GW1 (10.3.2.1)",Local,EU-West,1
+"LHR-Edge-GW1 (10.3.2.1)","PAR-Equinix1 (10.3.1.2)",Local,EU-West,1
+"LHR-Edge-GW1 (10.3.2.1)","DOCK-PoP-01 (10.3.2.2)",Local,EU-West,1
+"DOCK-PoP-01 (10.3.2.2)","LHR-Edge-GW1 (10.3.2.1)",Local,EU-West,1
+"DOCK-PoP-01 (10.3.2.2)","DUB-Subsea-1 (10.3.2.3)",Local,EU-West,2
+"DUB-Subsea-1 (10.3.2.3)","DOCK-PoP-01 (10.3.2.2)",Local,EU-West,2
+"DUB-Subsea-1 (10.3.2.3)","CDG-PoP-01 (10.3.2.4)",Local,EU-West,1
+"CDG-PoP-01 (10.3.2.4)","DUB-Subsea-1 (10.3.2.3)",Local,EU-West,1
+"CDG-PoP-01 (10.3.2.4)","SLG-DC-01 (10.3.3.1)",Local,EU-West,1
+"SLG-DC-01 (10.3.3.1)","CDG-PoP-01 (10.3.2.4)",Local,EU-West,1
+"SLG-DC-01 (10.3.3.1)","OXF-Tower-RF (10.3.3.2)",Local,EU-West,2
+"OXF-Tower-RF (10.3.3.2)","SLG-DC-01 (10.3.3.1)",Local,EU-West,2
+"OXF-Tower-RF (10.3.3.2)","CAM-Research (10.3.3.3)",Local,EU-West,1
+"CAM-Research (10.3.3.3)","OXF-Tower-RF (10.3.3.2)",Local,EU-West,1
+"CAM-Research (10.3.3.3)","MAN-Dist-01 (10.3.3.4)",Local,EU-West,1
+"MAN-Dist-01 (10.3.3.4)","CAM-Research (10.3.3.3)",Local,EU-West,1
+"MAN-Dist-01 (10.3.3.4)","IDF-Metro-01 (10.3.4.1)",Local,EU-West,2
+"IDF-Metro-01 (10.3.4.1)","MAN-Dist-01 (10.3.3.4)",Local,EU-West,2
+"IDF-Metro-01 (10.3.4.1)","BEL-PoP-01 (10.3.4.2)",Local,EU-West,1
+"BEL-PoP-01 (10.3.4.2)","IDF-Metro-01 (10.3.4.1)",Local,EU-West,1
+"BEL-PoP-01 (10.3.4.2)","LYN-Node-01 (10.3.4.3)",Local,EU-West,1
+"LYN-Node-01 (10.3.4.3)","BEL-PoP-01 (10.3.4.2)",Local,EU-West,1
+"LYN-Node-01 (10.3.4.3)","10.3.90.14",Local,EU-West,2
+"10.3.90.14","LYN-Node-01 (10.3.4.3)",Local,EU-West,2
+"10.3.90.14","10.3.90.15",Local,EU-West,1
+"10.3.90.15","10.3.90.14",Local,EU-West,1
+"10.3.90.15","10.3.90.16",Local,EU-West,1
+"10.3.90.16","10.3.90.15",Local,EU-West,1
+"10.3.90.16","LON-TH-Core1 (10.3.1.1)",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","10.3.90.16",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","LHR-Edge-GW1 (10.3.2.1)",Local,EU-West,1
+"LHR-Edge-GW1 (10.3.2.1)","LON-TH-Core1 (10.3.1.1)",Local,EU-West,1
+"PAR-Equinix1 (10.3.1.2)","DOCK-PoP-01 (10.3.2.2)",Local,EU-West,2
+"DOCK-PoP-01 (10.3.2.2)","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","DUB-Subsea-1 (10.3.2.3)",Local,EU-West,1
+"DUB-Subsea-1 (10.3.2.3)","LON-TH-Core1 (10.3.1.1)",Local,EU-West,1
+"PAR-Equinix1 (10.3.1.2)","CDG-PoP-01 (10.3.2.4)",Local,EU-West,2
+"CDG-PoP-01 (10.3.2.4)","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","SLG-DC-01 (10.3.3.1)",Local,EU-West,1
+"SLG-DC-01 (10.3.3.1)","LON-TH-Core1 (10.3.1.1)",Local,EU-West,1
+"PAR-Equinix1 (10.3.1.2)","OXF-Tower-RF (10.3.3.2)",Local,EU-West,2
+"OXF-Tower-RF (10.3.3.2)","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","CAM-Research (10.3.3.3)",Local,EU-West,1
+"CAM-Research (10.3.3.3)","LON-TH-Core1 (10.3.1.1)",Local,EU-West,1
+"PAR-Equinix1 (10.3.1.2)","MAN-Dist-01 (10.3.3.4)",Local,EU-West,2
+"MAN-Dist-01 (10.3.3.4)","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","IDF-Metro-01 (10.3.4.1)",Local,EU-West,1
+"IDF-Metro-01 (10.3.4.1)","LON-TH-Core1 (10.3.1.1)",Local,EU-West,1
+"PAR-Equinix1 (10.3.1.2)","BEL-PoP-01 (10.3.4.2)",Local,EU-West,2
+"BEL-PoP-01 (10.3.4.2)","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","LYN-Node-01 (10.3.4.3)",Local,EU-West,1
+"LYN-Node-01 (10.3.4.3)","LON-TH-Core1 (10.3.1.1)",Local,EU-West,1
+"PAR-Equinix1 (10.3.1.2)","10.3.90.14",Local,EU-West,2
+"10.3.90.14","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"LON-TH-Core1 (10.3.1.1)","10.3.90.15",Local,EU-West,1
+"10.3.90.15","LON-TH-Core1 (10.3.1.1)",Local,EU-West,1
+"PAR-Equinix1 (10.3.1.2)","10.3.90.16",Local,EU-West,2
+"10.3.90.16","PAR-Equinix1 (10.3.1.2)",Local,EU-West,2
+"LHR-Edge-GW1 (10.3.2.1)","CDG-PoP-01 (10.3.2.4)",Local,EU-West,1
+"CDG-PoP-01 (10.3.2.4)","LHR-Edge-GW1 (10.3.2.1)",Local,EU-West,1
+"DOCK-PoP-01 (10.3.2.2)","OXF-Tower-RF (10.3.3.2)",Local,EU-West,2
+"OXF-Tower-RF (10.3.3.2)","DOCK-PoP-01 (10.3.2.2)",Local,EU-West,2
+"DUB-Subsea-1 (10.3.2.3)","MAN-Dist-01 (10.3.3.4)",Local,EU-West,1
+"MAN-Dist-01 (10.3.3.4)","DUB-Subsea-1 (10.3.2.3)",Local,EU-West,1
+"SLG-DC-01 (10.3.3.1)","BEL-PoP-01 (10.3.4.2)",Local,EU-West,2
+"BEL-PoP-01 (10.3.4.2)","SLG-DC-01 (10.3.3.1)",Local,EU-West,2
+"CAM-Research (10.3.3.3)","10.3.90.14",Local,EU-West,1
+"10.3.90.14","CAM-Research (10.3.3.3)",Local,EU-West,1
+"IDF-Metro-01 (10.3.4.1)","10.3.90.15",Local,EU-West,2
+"FRA-CIX-Core (10.4.1.1)","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,2
+"AMS-Nikhef-1 (10.4.1.2)","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,2
+"AMS-Nikhef-1 (10.4.1.2)","FRA-Equinix2 (10.4.2.1)",Local,EU-Central,1
+"FRA-Equinix2 (10.4.2.1)","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,1
+"FRA-Equinix2 (10.4.2.1)","AMS-Equinix2 (10.4.2.2)",Local,EU-Central,1
+"AMS-Equinix2 (10.4.2.2)","FRA-Equinix2 (10.4.2.1)",Local,EU-Central,1
+"AMS-Equinix2 (10.4.2.2)","BER-Core-GW1 (10.4.2.3)",Local,EU-Central,2
+"BER-Core-GW1 (10.4.2.3)","AMS-Equinix2 (10.4.2.2)",Local,EU-Central,2
+"MUC-Tower-RF (10.4.3.1)","ROT-Port-GW1 (10.4.3.2)",Local,EU-Central,2
+"ROT-Port-GW1 (10.4.3.2)","MUC-Tower-RF (10.4.3.1)",Local,EU-Central,2
+"ROT-Port-GW1 (10.4.3.2)","VIE-VIX-PoP (10.4.3.3)",Local,EU-Central,1
+"VIE-VIX-PoP (10.4.3.3)","ROT-Port-GW1 (10.4.3.2)",Local,EU-Central,1
+"VIE-VIX-PoP (10.4.3.3)","GVA-CERN-01 (10.4.3.4)",Local,EU-Central,1
+"GVA-CERN-01 (10.4.3.4)","VIE-VIX-PoP (10.4.3.3)",Local,EU-Central,1
+"GVA-CERN-01 (10.4.3.4)","PRG-Node-01 (10.4.4.1)",Local,EU-Central,2
+"PRG-Node-01 (10.4.4.1)","GVA-CERN-01 (10.4.3.4)",Local,EU-Central,2
+"PRG-Node-01 (10.4.4.1)","WAW-Node-01 (10.4.4.2)",Local,EU-Central,1
+"WAW-Node-01 (10.4.4.2)","PRG-Node-01 (10.4.4.1)",Local,EU-Central,1
+"WAW-Node-01 (10.4.4.2)","CPH-Subsea-1 (10.4.4.3)",Local,EU-Central,1
+"CPH-Subsea-1 (10.4.4.3)","WAW-Node-01 (10.4.4.2)",Local,EU-Central,1
+"CPH-Subsea-1 (10.4.4.3)","10.4.90.14",Local,EU-Central,2
+"10.4.90.14","CPH-Subsea-1 (10.4.4.3)",Local,EU-Central,2
+"10.4.90.14","10.4.90.15",Local,EU-Central,1
+"10.4.90.15","10.4.90.14",Local,EU-Central,1
+"10.4.90.15","10.4.90.16",Local,EU-Central,1
+"10.4.90.16","10.4.90.15",Local,EU-Central,1
+"10.4.90.16","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,2
+"FRA-CIX-Core (10.4.1.1)","10.4.90.16",Local,EU-Central,2
+"FRA-CIX-Core (10.4.1.1)","FRA-Equinix2 (10.4.2.1)",Local,EU-Central,1
+"FRA-Equinix2 (10.4.2.1)","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,1
+"AMS-Nikhef-1 (10.4.1.2)","AMS-Equinix2 (10.4.2.2)",Local,EU-Central,2
+"AMS-Equinix2 (10.4.2.2)","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,2
+"FRA-CIX-Core (10.4.1.1)","BER-Core-GW1 (10.4.2.3)",Local,EU-Central,1
+"BER-Core-GW1 (10.4.2.3)","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,1
+"FRA-CIX-Core (10.4.1.1)","MUC-Tower-RF (10.4.3.1)",Local,EU-Central,1
+"MUC-Tower-RF (10.4.3.1)","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,1
+"AMS-Nikhef-1 (10.4.1.2)","ROT-Port-GW1 (10.4.3.2)",Local,EU-Central,2
+"ROT-Port-GW1 (10.4.3.2)","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,2
+"FRA-CIX-Core (10.4.1.1)","VIE-VIX-PoP (10.4.3.3)",Local,EU-Central,1
+"VIE-VIX-PoP (10.4.3.3)","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,1
+"AMS-Nikhef-1 (10.4.1.2)","GVA-CERN-01 (10.4.3.4)",Local,EU-Central,2
+"GVA-CERN-01 (10.4.3.4)","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,2
+"FRA-CIX-Core (10.4.1.1)","PRG-Node-01 (10.4.4.1)",Local,EU-Central,1
+"PRG-Node-01 (10.4.4.1)","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,1
+"AMS-Nikhef-1 (10.4.1.2)","WAW-Node-01 (10.4.4.2)",Local,EU-Central,2
+"WAW-Node-01 (10.4.4.2)","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,2
+"FRA-CIX-Core (10.4.1.1)","CPH-Subsea-1 (10.4.4.3)",Local,EU-Central,1
+"CPH-Subsea-1 (10.4.4.3)","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,1
+"AMS-Nikhef-1 (10.4.1.2)","10.4.90.14",Local,EU-Central,2
+"10.4.90.14","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,2
+"FRA-CIX-Core (10.4.1.1)","10.4.90.15",Local,EU-Central,1
+"10.4.90.15","FRA-CIX-Core (10.4.1.1)",Local,EU-Central,1
+"AMS-Nikhef-1 (10.4.1.2)","10.4.90.16",Local,EU-Central,2
+"10.4.90.16","AMS-Nikhef-1 (10.4.1.2)",Local,EU-Central,2
+"AMS-Equinix2 (10.4.2.2)","ROT-Port-GW1 (10.4.3.2)",Local,EU-Central,2
+"ROT-Port-GW1 (10.4.3.2)","AMS-Equinix2 (10.4.2.2)",Local,EU-Central,2
+"BER-Core-GW1 (10.4.2.3)","GVA-CERN-01 (10.4.3.4)",Local,EU-Central,1
+"GVA-CERN-01 (10.4.3.4)","BER-Core-GW1 (10.4.2.3)",Local,EU-Central,1
+"MUC-Tower-RF (10.4.3.1)","WAW-Node-01 (10.4.4.2)",Local,EU-Central,2
+"WAW-Node-01 (10.4.4.2)","MUC-Tower-RF (10.4.3.1)",Local,EU-Central,2
+"VIE-VIX-PoP (10.4.3.3)","10.4.90.14",Local,EU-Central,1
+"10.4.90.14","VIE-VIX-PoP (10.4.3.3)",Local,EU-Central,1
+"PRG-Node-01 (10.4.4.1)","10.4.90.15",Local,EU-Central,2
+"TYO-Otemachi (10.5.1.1)","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"SIN-Equinix1 (10.5.1.2)","TYO-Otemachi (10.5.1.1)",Local,APAC,2
+"SIN-Equinix1 (10.5.1.2)","HKG-MegaiAdv (10.5.2.1)",Local,APAC,1
+"HKG-MegaiAdv (10.5.2.1)","SIN-Equinix1 (10.5.1.2)",Local,APAC,1
+"HKG-MegaiAdv (10.5.2.1)","SYD-Equinix1 (10.5.2.2)",Local,APAC,1
+"SYD-Equinix1 (10.5.2.2)","HKG-MegaiAdv (10.5.2.1)",Local,APAC,1
+"SYD-Equinix1 (10.5.2.2)","NRT-PoP-01 (10.5.2.3)",Local,APAC,2
+"NRT-PoP-01 (10.5.2.3)","SYD-Equinix1 (10.5.2.2)",Local,APAC,2
+"NRT-PoP-01 (10.5.2.3)","SIN-Singtel1 (10.5.2.4)",Local,APAC,1
+"SIN-Singtel1 (10.5.2.4)","NRT-PoP-01 (10.5.2.3)",Local,APAC,1
+"SIN-Singtel1 (10.5.2.4)","OSA-Dist-01 (10.5.3.1)",Local,APAC,1
+"OSA-Dist-01 (10.5.3.1)","SIN-Singtel1 (10.5.2.4)",Local,APAC,1
+"OSA-Dist-01 (10.5.3.1)","HKG-Subsea-1 (10.5.3.2)",Local,APAC,2
+"HKG-Subsea-1 (10.5.3.2)","OSA-Dist-01 (10.5.3.1)",Local,APAC,2
+"HKG-Subsea-1 (10.5.3.2)","MEL-Metro-01 (10.5.3.3)",Local,APAC,1
+"MEL-Metro-01 (10.5.3.3)","HKG-Subsea-1 (10.5.3.2)",Local,APAC,1
+"MEL-Metro-01 (10.5.3.3)","TPE-TaipeiIX (10.5.3.4)",Local,APAC,1
+"TPE-TaipeiIX (10.5.3.4)","MEL-Metro-01 (10.5.3.3)",Local,APAC,1
+"TPE-TaipeiIX (10.5.3.4)","ICN-Core-GW1 (10.5.4.1)",Local,APAC,2
+"ICN-Core-GW1 (10.5.4.1)","TPE-TaipeiIX (10.5.3.4)",Local,APAC,2
+"ICN-Core-GW1 (10.5.4.1)","BKK-Node-01 (10.5.4.2)",Local,APAC,1
+"BKK-Node-01 (10.5.4.2)","ICN-Core-GW1 (10.5.4.1)",Local,APAC,1
+"BKK-Node-01 (10.5.4.2)","KUL-Node-01 (10.5.4.3)",Local,APAC,1
+"KUL-Node-01 (10.5.4.3)","BKK-Node-01 (10.5.4.2)",Local,APAC,1
+"KUL-Node-01 (10.5.4.3)","10.5.90.14",Local,APAC,2
+"10.5.90.14","KUL-Node-01 (10.5.4.3)",Local,APAC,2
+"10.5.90.14","10.5.90.15",Local,APAC,1
+"10.5.90.15","10.5.90.14",Local,APAC,1
+"10.5.90.15","10.5.90.16",Local,APAC,1
+"10.5.90.16","10.5.90.15",Local,APAC,1
+"10.5.90.16","TYO-Otemachi (10.5.1.1)",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","10.5.90.16",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","HKG-MegaiAdv (10.5.2.1)",Local,APAC,1
+"HKG-MegaiAdv (10.5.2.1)","TYO-Otemachi (10.5.1.1)",Local,APAC,1
+"SIN-Equinix1 (10.5.1.2)","SYD-Equinix1 (10.5.2.2)",Local,APAC,2
+"SYD-Equinix1 (10.5.2.2)","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","NRT-PoP-01 (10.5.2.3)",Local,APAC,1
+"NRT-PoP-01 (10.5.2.3)","TYO-Otemachi (10.5.1.1)",Local,APAC,1
+"SIN-Equinix1 (10.5.1.2)","SIN-Singtel1 (10.5.2.4)",Local,APAC,2
+"SIN-Singtel1 (10.5.2.4)","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","OSA-Dist-01 (10.5.3.1)",Local,APAC,1
+"OSA-Dist-01 (10.5.3.1)","TYO-Otemachi (10.5.1.1)",Local,APAC,1
+"SIN-Equinix1 (10.5.1.2)","HKG-Subsea-1 (10.5.3.2)",Local,APAC,2
+"HKG-Subsea-1 (10.5.3.2)","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","MEL-Metro-01 (10.5.3.3)",Local,APAC,1
+"MEL-Metro-01 (10.5.3.3)","TYO-Otemachi (10.5.1.1)",Local,APAC,1
+"SIN-Equinix1 (10.5.1.2)","TPE-TaipeiIX (10.5.3.4)",Local,APAC,2
+"TPE-TaipeiIX (10.5.3.4)","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","ICN-Core-GW1 (10.5.4.1)",Local,APAC,1
+"ICN-Core-GW1 (10.5.4.1)","TYO-Otemachi (10.5.1.1)",Local,APAC,1
+"SIN-Equinix1 (10.5.1.2)","BKK-Node-01 (10.5.4.2)",Local,APAC,2
+"BKK-Node-01 (10.5.4.2)","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","KUL-Node-01 (10.5.4.3)",Local,APAC,1
+"KUL-Node-01 (10.5.4.3)","TYO-Otemachi (10.5.1.1)",Local,APAC,1
+"SIN-Equinix1 (10.5.1.2)","10.5.90.14",Local,APAC,2
+"10.5.90.14","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"TYO-Otemachi (10.5.1.1)","10.5.90.15",Local,APAC,1
+"10.5.90.15","TYO-Otemachi (10.5.1.1)",Local,APAC,1
+"SIN-Equinix1 (10.5.1.2)","10.5.90.16",Local,APAC,2
+"10.5.90.16","SIN-Equinix1 (10.5.1.2)",Local,APAC,2
+"HKG-MegaiAdv (10.5.2.1)","SIN-Singtel1 (10.5.2.4)",Local,APAC,1
+"SIN-Singtel1 (10.5.2.4)","HKG-MegaiAdv (10.5.2.1)",Local,APAC,1
+"SYD-Equinix1 (10.5.2.2)","HKG-Subsea-1 (10.5.3.2)",Local,APAC,2
+"HKG-Subsea-1 (10.5.3.2)","SYD-Equinix1 (10.5.2.2)",Local,APAC,2
+"NRT-PoP-01 (10.5.2.3)","TPE-TaipeiIX (10.5.3.4)",Local,APAC,1
+"TPE-TaipeiIX (10.5.3.4)","NRT-PoP-01 (10.5.2.3)",Local,APAC,1
+"OSA-Dist-01 (10.5.3.1)","BKK-Node-01 (10.5.4.2)",Local,APAC,2
+"BKK-Node-01 (10.5.4.2)","OSA-Dist-01 (10.5.3.1)",Local,APAC,2
+"MEL-Metro-01 (10.5.3.3)","10.5.90.14",Local,APAC,1
+"10.5.90.14","MEL-Metro-01 (10.5.3.3)",Local,APAC,1
+"ICN-Core-GW1 (10.5.4.1)","10.5.90.15",Local,APAC,2
+"SEA-WestCore (10.2.1.2)","NYC-HQ-GW1 (10.1.1.1)",Fiber,Inter-Region,38
+"NYC-HQ-GW1 (10.1.1.1)","SEA-WestCore (10.2.1.2)",Fiber,Inter-Region,38
+"SFO-Equinix1 (10.2.1.1)","IAD-Ashburn (10.1.1.2)",Fiber,Inter-Region,40
+"IAD-Ashburn (10.1.1.2)","SFO-Equinix1 (10.2.1.1)",Fiber,Inter-Region,40
+"LAX-PoP-01 (10.2.2.3)","PHL-Hub-01 (10.1.2.4)",Fiber,Inter-Region,45
+"PHL-Hub-01 (10.1.2.4)","LAX-PoP-01 (10.2.2.3)",Fiber,Inter-Region,45
+"OAK-Tower-RF (10.2.2.2)","MAN-Tower-RF (10.1.3.1)",RF,Inter-Region,295
+"MAN-Tower-RF (10.1.3.1)","OAK-Tower-RF (10.2.2.2)",RF,Inter-Region,295
+"RNO-Relay-01 (10.2.4.3)","RIC-Relay-01 (10.1.3.4)",RF,Inter-Region,310
+"RIC-Relay-01 (10.1.3.4)","RNO-Relay-01 (10.2.4.3)",RF,Inter-Region,310
+"IAD-Ashburn (10.1.1.2)","PAR-Equinix1 (10.3.1.2)",Fiber,Inter-Region,99
+"PAR-Equinix1 (10.3.1.2)","IAD-Ashburn (10.1.1.2)",Fiber,Inter-Region,99
+"JFK-PoP-01 (10.1.2.1)","DOCK-PoP-01 (10.3.2.2)",Fiber,Inter-Region,46
+"DOCK-PoP-01 (10.3.2.2)","JFK-PoP-01 (10.1.2.1)",Fiber,Inter-Region,46
+"BOS-Metro-R1 (10.1.2.3)","DUB-Subsea-1 (10.3.2.3)",Fiber,Inter-Region,48
+"DUB-Subsea-1 (10.3.2.3)","BOS-Metro-R1 (10.1.2.3)",Fiber,Inter-Region,48
+"MAN-Tower-RF (10.1.3.1)","OXF-Tower-RF (10.3.3.2)",RF,Inter-Region,315
+"OXF-Tower-RF (10.3.3.2)","MAN-Tower-RF (10.1.3.1)",RF,Inter-Region,315
+"LON-TH-Core1 (10.3.1.1)","AMS-Nikhef-1 (10.4.1.2)",Fiber,Inter-Region,35
+"AMS-Nikhef-1 (10.4.1.2)","LON-TH-Core1 (10.3.1.1)",Fiber,Inter-Region,35
+"PAR-Equinix1 (10.3.1.2)","FRA-CIX-Core (10.4.1.1)",Fiber,Inter-Region,36
+"FRA-CIX-Core (10.4.1.1)","PAR-Equinix1 (10.3.1.2)",Fiber,Inter-Region,36
+"LHR-Edge-GW1 (10.3.2.1)","FRA-Equinix2 (10.4.2.1)",Fiber,Inter-Region,38
+"FRA-Equinix2 (10.4.2.1)","LHR-Edge-GW1 (10.3.2.1)",Fiber,Inter-Region,38
+"DOCK-PoP-01 (10.3.2.2)","AMS-Equinix2 (10.4.2.2)",Fiber,Inter-Region,39
+"AMS-Equinix2 (10.4.2.2)","DOCK-PoP-01 (10.3.2.2)",Fiber,Inter-Region,39
+"OXF-Tower-RF (10.3.3.2)","MUC-Tower-RF (10.4.3.1)",RF,Inter-Region,285
+"MUC-Tower-RF (10.4.3.1)","OXF-Tower-RF (10.3.3.2)",RF,Inter-Region,285
+"SLG-DC-01 (10.3.3.1)","ROT-Port-GW1 (10.4.3.2)",RF,Inter-Region,298
+"ROT-Port-GW1 (10.4.3.2)","SLG-DC-01 (10.3.3.1)",RF,Inter-Region,298
+"FRA-CIX-Core (10.4.1.1)","TYO-Otemachi (10.5.1.1)",Fiber,Inter-Region,45
+"TYO-Otemachi (10.5.1.1)","FRA-CIX-Core (10.4.1.1)",Fiber,Inter-Region,45
+"AMS-Nikhef-1 (10.4.1.2)","SIN-Equinix1 (10.5.1.2)",Fiber,Inter-Region,47
+"SIN-Equinix1 (10.5.1.2)","AMS-Nikhef-1 (10.4.1.2)",Fiber,Inter-Region,47
+"BER-Core-GW1 (10.4.2.3)","HKG-MegaiAdv (10.5.2.1)",Fiber,Inter-Region,49
+"HKG-MegaiAdv (10.5.2.1)","BER-Core-GW1 (10.4.2.3)",Fiber,Inter-Region,49
+"MUC-Tower-RF (10.4.3.1)","OSA-Dist-01 (10.5.3.1)",RF,Inter-Region,320
+"OSA-Dist-01 (10.5.3.1)","MUC-Tower-RF (10.4.3.1)",RF,Inter-Region,320
+"GVA-CERN-01 (10.4.3.4)","TPE-TaipeiIX (10.5.3.4)",RF,Inter-Region,315
+"TPE-TaipeiIX (10.5.3.4)","GVA-CERN-01 (10.4.3.4)",RF,Inter-Region,315
+"NEW-NODE (10.9.9.9)","LON-TH-Core1 (10.3.1.1)",Fiber,Inter-Region,10
+"LON-TH-Core1 (10.3.1.1)","NEW-NODE (10.9.9.9)",Fiber,Inter-Region,10

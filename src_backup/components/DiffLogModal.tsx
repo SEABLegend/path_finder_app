@@ -1,0 +1,80 @@
+import React from 'react';
+import { GitCompare, X } from 'lucide-react';
+import type { GraphEdge } from '../engine/CsvParser';
+
+interface DiffLogModalProps {
+  edgesA: GraphEdge[];
+  edgesB: GraphEdge[];
+  onClose: () => void;
+}
+
+const DiffLogModal: React.FC<DiffLogModalProps> = ({ edgesA, edgesB, onClose }) => {
+  // Compute Deltas based on from-to pairs
+  const setA = new Set(edgesA.map(e => `${e.from}-${e.to}`));
+  const setB = new Set(edgesB.map(e => `${e.from}-${e.to}`));
+
+  const onlyInA = edgesA.filter(e => !setB.has(`${e.from}-${e.to}`));
+  const onlyInB = edgesB.filter(e => !setA.has(`${e.from}-${e.to}`));
+
+  return (
+    <div className="modal-overlay">
+      <div className="modal-content" style={{ width: '600px', maxWidth: '95vw', maxHeight: '80vh' }}>
+        <div className="modal-header">
+          <div className="brand">
+            <GitCompare size={20} className="brand-icon" />
+            Network Difference Log
+          </div>
+          <button type="button" className="icon-btn" onClick={onClose}>
+            <X size={20} />
+          </button>
+        </div>
+        
+        <div className="modal-body" style={{ overflowY: 'auto' }}>
+          <p className="helper-text">
+            Comparison complete. Here are the structural differences between Map A and Map B.
+          </p>
+          
+          <div style={{ display: 'flex', gap: '16px' }}>
+            <div style={{ flex: 1 }}>
+              <h4 style={{ color: 'var(--danger)', margin: '0 0 12px 0', borderBottom: '1px solid var(--border)', paddingBottom: '8px' }}>
+                Only in Map A ({onlyInA.length})
+              </h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                {onlyInA.map(e => (
+                  <div key={e.id} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                    {e.from} → {e.to} <span style={{ opacity: 0.5 }}>(Cost: {e.cost})</span>
+                  </div>
+                ))}
+                {onlyInA.length === 0 && <span style={{ fontSize: '0.875rem', opacity: 0.5 }}>None</span>}
+              </div>
+            </div>
+
+            <div style={{ width: '1px', background: 'var(--border)' }}></div>
+
+            <div style={{ flex: 1 }}>
+              <h4 style={{ color: 'var(--success)', margin: '0 0 12px 0', borderBottom: '1px solid var(--border)', paddingBottom: '8px' }}>
+                Only in Map B ({onlyInB.length})
+              </h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                {onlyInB.map(e => (
+                  <div key={e.id} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                    {e.from} → {e.to} <span style={{ opacity: 0.5 }}>(Cost: {e.cost})</span>
+                  </div>
+                ))}
+                {onlyInB.length === 0 && <span style={{ fontSize: '0.875rem', opacity: 0.5 }}>None</span>}
+              </div>
+            </div>
+          </div>
+
+          <div className="modal-actions" style={{ marginTop: '24px' }}>
+            <button type="button" className="btn btn-primary" onClick={onClose}>
+              Proceed to A/B Routing
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DiffLogModal;
