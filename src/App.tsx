@@ -580,8 +580,8 @@ function App() {
       <header className="top-bar">
         <div className="brand" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <GitGraph className="brand-icon" size={24} />
-            PathFinder Pro
+            <img src="/app_icon.png" alt="Path Finder V1 Logo" style={{ width: 24, height: 24, borderRadius: 4, objectFit: 'contain' }} />
+            Path Finder V1
           </div>
           {fileNameA && (
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.875rem', color: 'var(--text-secondary)', paddingInlineStart: '16px', borderInlineStart: '1px solid var(--border)' }}>

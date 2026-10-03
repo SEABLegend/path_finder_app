@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "PathFinder",
+  "productName": "Path Finder V1",
   "version": "0.1.0",
-  "identifier": "com.pathfinder.app",
+  "identifier": "com.pathfinder.v1",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:5173",
@@ -13,7 +13,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "Network Path Finder",
+        "title": "Path Finder V1",
         "width": 1366,
         "height": 850,
         "resizable": true,
